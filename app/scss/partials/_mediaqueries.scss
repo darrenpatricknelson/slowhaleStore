@@ -1,0 +1,46 @@
+@media (max-width: 480px) {
+  /*! Mobile screen sizes */
+  /*! landing page */
+  #firstLanding {
+    position: relative;
+    height: 50%;
+    width: 100%;
+  }
+
+  #secondLanding,
+  #thirdLanding {
+    display: none;
+  }
+
+  #shoppingLink {
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    left: 25px;
+  }
+
+  .landingBanner {
+    border-radius: 0;
+  }
+
+  .landingButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+  }
+
+  .landingButtonText {
+    font-size: smaller;
+  }
+}
+
+@media (max-width: 1360px) {
+  /*! tablet screen sizes */
+  /*! landing page */
+}
+
+@media (min-width: 1360px) {
+  /*! tablet screen sizes */
+  /*! landing page */
+}

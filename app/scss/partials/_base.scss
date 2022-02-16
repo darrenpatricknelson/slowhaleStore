@@ -1,0 +1,30 @@
+#slowhaleIcon {
+  width: 4rem;
+  height: 4rem;
+  margin: 0.5rem;
+  border-radius: 20%;
+}
+
+body {
+  background: #f8f9fa;
+}
+
+header {
+  border-bottom: 1px solid black;
+  padding: 0.5%;
+  text-align: center;
+  background-color: $aqua;
+  color: $black;
+}
+
+.looker {
+  border: 2px solid red;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.btn-outline-info:hover {
+  background-color: $aqua;
+}

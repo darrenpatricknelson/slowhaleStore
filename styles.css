@@ -125,7 +125,7 @@ header {
 
 /*! Sneak Peak */
 #row2 {
-  width: 90%;
+  width: 70%;
   margin: 0 auto 1%;
   background-color: #fff;
 }
@@ -194,7 +194,7 @@ header {
 #sectionHeadings {
   text-align: center;
   text-decoration: underline;
-  margin-bottom: 1%;
+  margin: 50px 0;
 }
 
 .sneakImage .sneakPeakImages {
@@ -205,8 +205,13 @@ header {
 #sneakSets,
 #sneakSingles,
 #sneakAcc {
-  height: 600px;
+  height: 400px;
   position: relative;
+}
+#sneakSets button,
+#sneakSingles button,
+#sneakAcc button {
+  padding: 5px 10px;
 }
 #sneakSets button:hover .underline,
 #sneakSingles button:hover .underline,
@@ -214,6 +219,9 @@ header {
   text-decoration: underline;
 }
 
+#sneakSingles button {
+  height: 40px;
+}
 #sneakSingles .tops,
 #sneakSingles .bottoms {
   position: relative;
@@ -329,37 +337,41 @@ header {
 @media (max-width: 480px) {
   /*! Mobile screen sizes */
   /*! landing page */
-  #firstLanding {
-    position: relative;
-    height: 50%;
+  #row1 .landingBanner {
     width: 100%;
-  }
-
-  #secondLanding,
-#thirdLanding {
-    display: none;
-  }
-
-  #shoppingLink {
-    position: absolute;
-    z-index: 1;
-    top: 50px;
-    left: 25px;
-  }
-
-  .landingBanner {
     border-radius: 0;
+    margin: 0;
   }
-
-  .landingButton {
+  #row1 .landingBanner #shoppingLink {
+    left: 10px;
+    top: 10px;
+  }
+  #row1 .landingBanner #shoppingLink .landingButton {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 3%;
   }
-
-  .landingButtonText {
+  #row1 .landingBanner #shoppingLink button .landingButtonText {
     font-size: smaller;
+    margin: 0;
+  }
+
+  #sectionHeadings {
+    margin: 20px 0;
+    font-size: large;
+  }
+
+  #row2 .sneakPeaks #sneakSets,
+#row2 .sneakPeaks #sneakAcc {
+    height: 200px;
+  }
+  #row2 .sneakPeaks #sneakSets button,
+#row2 .sneakPeaks #sneakSingles button,
+#row2 .sneakPeaks #sneakAcc button {
+    font-size: x-small;
+    width: 70%;
+    height: 30px;
   }
 }
 @media (max-width: 1360px) {

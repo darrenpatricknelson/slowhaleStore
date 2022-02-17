@@ -1,37 +1,59 @@
 @media (max-width: 480px) {
   /*! Mobile screen sizes */
   /*! landing page */
-  #firstLanding {
-    position: relative;
-    height: 50%;
-    width: 100%;
+
+  #row1 {
+    .landingBanner {
+      width: 100%;
+      border-radius: 0;
+      margin: 0;
+
+      #shoppingLink {
+        left: 10px;
+        top: 10px;
+
+        .landingButton {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 3%;
+        }
+        button {
+          .landingButtonText {
+            font-size: smaller;
+            margin: 0;
+          }
+        }
+      }
+    }
   }
 
-  #secondLanding,
-  #thirdLanding {
-    display: none;
+  // #secondLanding,
+  // #thirdLanding {
+  //   display: none;
+  // }
+  #sectionHeadings {
+    margin: 20px 0;
+    font-size: large;
   }
 
-  #shoppingLink {
-    position: absolute;
-    z-index: 1;
-    top: 50px;
-    left: 25px;
-  }
+  #row2 {
+    .sneakPeaks {
+      #sneakSets,
+      #sneakAcc {
+        height: 200px;
+      }
 
-  .landingBanner {
-    border-radius: 0;
-  }
-
-  .landingButton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 3%;
-  }
-
-  .landingButtonText {
-    font-size: smaller;
+      #sneakSets,
+      #sneakSingles,
+      #sneakAcc {
+        button {
+          font-size: x-small;
+          width: 70%;
+          height: 30px;
+        }
+      }
+    }
   }
 }
 

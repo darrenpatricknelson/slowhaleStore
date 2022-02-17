@@ -203,15 +203,26 @@ header {
 }
 
 #sneakSets,
-#sneakTops,
+#sneakSingles,
 #sneakAcc {
+  height: 600px;
   position: relative;
-  height: 100%;
 }
 #sneakSets button:hover .underline,
-#sneakTops button:hover .underline,
+#sneakSingles button:hover .underline,
 #sneakAcc button:hover .underline {
   text-decoration: underline;
+}
+
+#sneakSingles .tops,
+#sneakSingles .bottoms {
+  position: relative;
+  height: 50%;
+}
+
+#sneakSingles .bottoms button {
+  left: 20px;
+  right: auto;
 }
 
 #sneakSets button {
@@ -226,7 +237,7 @@ header {
   bottom: 5%;
 }
 
-#sneakTops button {
+#sneakSingles button {
   position: absolute;
   right: 10%;
   top: 5%;

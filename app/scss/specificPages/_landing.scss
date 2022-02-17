@@ -99,14 +99,31 @@
 }
 
 #sneakSets,
-#sneakTops,
+#sneakSingles,
 #sneakAcc {
+  height: 600px;
   position: relative;
-  height: 100%;
 
   button:hover {
     .underline {
       text-decoration: underline;
+    }
+  }
+}
+
+#sneakSingles {
+  .tops,
+  .bottoms {
+    position: relative;
+    height: 50%;
+  }
+}
+
+#sneakSingles {
+  .bottoms {
+    button {
+      left: 20px;
+      right: auto;
     }
   }
 }
@@ -127,7 +144,7 @@
   }
 }
 
-#sneakTops {
+#sneakSingles {
   button {
     position: absolute;
     right: 10%;

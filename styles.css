@@ -1,5 +1,80 @@
 /*! Imports */
 /*! base scss */
+/*! root scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  /*! background: red; */
+}
+
+/* header section */
+p {
+  margin: 0;
+}
+
+.hide {
+  display: none;
+}
+
+section {
+  position: relative;
+}
+
+.row {
+  margin: 0;
+}
+
+/*! footer */
+#footer {
+  position: static;
+  display: block;
+  bottom: 0;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  margin: auto;
+  padding: 3%;
+  text-align: center;
+}
+
+.socialMedia {
+  /*! width: 20%; */
+  display: flex;
+  justify-content: center;
+}
+.socialMedia i {
+  margin: 1% 10px 2%;
+}
+
+.socialMedia i:hover {
+  cursor: pointer;
+}
+
+.fa-facebook-f:hover {
+  color: #129cf7;
+}
+
+.fa-twitter:hover {
+  color: #1d9bf0;
+}
+
+.fa-instagram:hover {
+  color: #f67340;
+}
+
+.fa-pinterest-p:hover {
+  color: #b7091b;
+}
+
+.fa-youtube:hover {
+  color: #ff0100;
+}
+
 #slowhaleIcon {
   width: 4rem;
   height: 4rem;
@@ -237,81 +312,6 @@ header {
 
 .appear:hover .damn {
   width: 300px;
-}
-
-/*! root scss */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  position: relative;
-  /*! background: red; */
-}
-
-/* header section */
-p {
-  margin: 0;
-}
-
-.hide {
-  display: none;
-}
-
-section {
-  position: relative;
-}
-
-.row {
-  margin: 0;
-}
-
-/*! footer */
-#footer {
-  position: static;
-  display: block;
-  bottom: 0;
-  width: 100%;
-  background: #000;
-  color: #fff;
-  margin: auto;
-  padding: 3%;
-  text-align: center;
-}
-
-.socialMedia {
-  /*! width: 20%; */
-  display: flex;
-  justify-content: center;
-}
-.socialMedia i {
-  margin: 1% 10px 2%;
-}
-
-.socialMedia i:hover {
-  cursor: pointer;
-}
-
-.fa-facebook-f:hover {
-  color: #129cf7;
-}
-
-.fa-twitter:hover {
-  color: #1d9bf0;
-}
-
-.fa-instagram:hover {
-  color: #f67340;
-}
-
-.fa-pinterest-p:hover {
-  color: #b7091b;
-}
-
-.fa-youtube:hover {
-  color: #ff0100;
 }
 
 /*! import media queries */

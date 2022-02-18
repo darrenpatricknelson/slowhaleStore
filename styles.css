@@ -12,6 +12,11 @@ body {
   /*! background: red; */
 }
 
+/* all images */
+img {
+  object-fit: cover;
+}
+
 /* navbar */
 nav a:hover {
   text-decoration: underline;
@@ -338,6 +343,119 @@ header {
   width: 300px;
 }
 
+#aboutUs {
+  /*! positioning */
+  position: relative;
+  width: 100%;
+  height: 600px;
+  padding: 50px;
+  /*! decoration */
+}
+#aboutUs .backgroundDec {
+  /*! positioning */
+  position: absolute;
+  left: 200px;
+  right: 200px;
+  bottom: 50px;
+  height: 250px;
+  /*! decoration */
+  border-radius: 1rem;
+  background: linear-gradient(to right, #00bfff, #ff69b4);
+}
+#aboutUs .Image {
+  /*! positioning */
+  position: absolute;
+  z-index: 1;
+  bottom: 100px;
+  left: 250px;
+  height: 450px;
+}
+#aboutUs .Image img {
+  width: 100%;
+  height: 100%;
+  /*! decoration */
+  border-radius: 1rem;
+}
+#aboutUs .auDescription {
+  /*! positioning */
+  position: absolute;
+  bottom: 50px;
+  right: 200px;
+  height: 500px;
+  width: 1000px;
+  /*! decoration */
+  border-radius: 1rem 1rem 1rem 0;
+  padding: 50px;
+  /*! text */
+  color: #ffffff;
+  background-color: rgba(128, 0, 255, 0.4);
+  /*! color: dark purple */
+}
+#aboutUs .auDescription .auDescriptionName {
+  display: flex;
+  align-items: flex-end;
+}
+#aboutUs .auDescription .auDescriptionName,
+#aboutUs .auDescription .auDescriptionInfo {
+  height: 200px;
+}
+#aboutUs .auDescription h1 {
+  line-height: 1.6;
+  text-decoration: underline;
+}
+#aboutUs .auDescription h3 {
+  line-height: 1.8;
+}
+#aboutUs .zoeImage {
+  /*! positioning */
+  position: absolute;
+  z-index: 1;
+  bottom: 100px;
+  right: 250px;
+  height: 450px;
+}
+#aboutUs .zoeImage img {
+  width: 100%;
+  height: 100%;
+  /*! decoration */
+  border-radius: 1rem;
+}
+#aboutUs .auDescriptionZoe {
+  /*! positioning */
+  position: absolute;
+  bottom: 50px;
+  left: 200px;
+  height: 500px;
+  width: 1000px;
+  /*! decoration */
+  border-radius: 1rem 1rem 0 1rem;
+  padding: 50px;
+  /*! display */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  /*! text */
+  color: #ffffff;
+  background-color: rgba(128, 0, 255, 0.4);
+}
+#aboutUs .auDescriptionZoe .auDescriptionName {
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+}
+#aboutUs .auDescriptionZoe .auDescriptionName,
+#aboutUs .auDescriptionZoe .auDescriptionInfo {
+  height: 200px;
+}
+#aboutUs .auDescriptionZoe h1 {
+  line-height: 2;
+  text-decoration: underline;
+}
+#aboutUs .auDescriptionZoe h3 {
+  line-height: 1.8;
+}
+
 #contactBackground {
   position: relative;
   width: 100%;
@@ -446,6 +564,94 @@ header {
   }
   #row3 .col-lg-3 {
     padding: 0;
+  }
+
+  /*! About us page */
+  #aboutUs {
+    /*! positioning */
+    position: relative;
+    width: 100%;
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    /*! decoration */
+    background: linear-gradient(to bottom, #00bfff, #ff69b4);
+  }
+  #aboutUs .backgroundDec {
+    /*! positioning */
+    display: none;
+  }
+  #aboutUs .Image {
+    /*! positioning */
+    position: absolute;
+    top: 40px;
+    bottom: 0;
+    left: 15px;
+    width: 200px;
+    height: 200px;
+  }
+  #aboutUs .Image img {
+    border-radius: 25%;
+  }
+  #aboutUs .auDescription {
+    /*! positioning */
+    position: relative;
+    bottom: 0;
+    right: 0;
+    width: 90%;
+    margin: auto;
+    /*! decoration */
+    border-radius: 1rem;
+    padding: 5px 10px;
+  }
+  #aboutUs .auDescription .auDescriptionName {
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+  }
+  #aboutUs .auDescription .auDescriptionInfo {
+    padding: 5px 10px;
+  }
+  #aboutUs .auDescription .auDescriptionName,
+#aboutUs .auDescription .auDescriptionInfo {
+    height: 150px;
+    text-align: end;
+  }
+  #aboutUs .zoeImage {
+    /*! positioning */
+    position: absolute;
+    top: 40px;
+    bottom: 0;
+    right: 15px;
+    width: 200px;
+    height: 200px;
+  }
+  #aboutUs .zoeImage img {
+    border-radius: 25%;
+  }
+  #aboutUs .auDescriptionZoe {
+    /*! positioning */
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    margin: auto;
+    /*! decoration */
+    border-radius: 1rem;
+    padding: 5px 10px;
+  }
+  #aboutUs .auDescriptionZoe .auDescriptionName {
+    display: flex;
+    align-items: flex-end;
+    justify-content: start;
+  }
+  #aboutUs .auDescriptionZoe .auDescriptionInfo {
+    padding: 5px 10px;
+  }
+  #aboutUs .auDescriptionZoe .auDescriptionName,
+#aboutUs .auDescriptionZoe .auDescriptionInfo {
+    height: 150px;
+    text-align: start;
   }
 
   /*! Contact us page */

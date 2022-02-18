@@ -60,6 +60,117 @@
     }
   }
 
+  /*! About us page */
+  #aboutUs {
+    /*! positioning */
+    position: relative;
+    width: 100%;
+    // height: 600px;
+    padding: 10px 5px;
+
+    display: flex;
+    flex-direction: column;
+
+    /*! decoration */
+    background: linear-gradient(to bottom, $deepskyblue, $hotpink);
+    //   background-color: $aliceblue;
+
+    .backgroundDec {
+      /*! positioning */
+      display: none;
+    }
+
+    .Image {
+      /*! positioning */
+      position: absolute;
+      top: 40px;
+      bottom: 0;
+      left: 15px;
+
+      width: 200px;
+      height: 200px;
+
+      img {
+        border-radius: 25%;
+      }
+    }
+
+    .auDescription {
+      /*! positioning */
+      position: relative;
+      bottom: 0;
+      right: 0;
+
+      width: 90%;
+      margin: auto;
+
+      /*! decoration */
+      border-radius: 1rem;
+      padding: 5px 10px;
+
+      .auDescriptionName {
+        display: flex;
+        align-items: flex-end;
+        justify-content: end;
+      }
+
+      .auDescriptionInfo {
+        padding: 5px 10px;
+      }
+
+      .auDescriptionName,
+      .auDescriptionInfo {
+        height: 150px;
+        text-align: end;
+      }
+    }
+
+    .zoeImage {
+      /*! positioning */
+      position: absolute;
+      top: 40px;
+      bottom: 0;
+      right: 15px;
+
+      width: 200px;
+      height: 200px;
+
+      img {
+        border-radius: 25%;
+      }
+    }
+
+    .auDescriptionZoe {
+      /*! positioning */
+      position: relative;
+      bottom: 0;
+      left: 0;
+
+      width: 90%;
+      margin: auto;
+
+      /*! decoration */
+      border-radius: 1rem;
+      padding: 5px 10px;
+
+      .auDescriptionName {
+        display: flex;
+        align-items: flex-end;
+        justify-content: start;
+      }
+
+      .auDescriptionInfo {
+        padding: 5px 10px;
+      }
+
+      .auDescriptionName,
+      .auDescriptionInfo {
+        height: 150px;
+        text-align: start;
+      }
+    }
+  }
+
   /*! Contact us page */
   #contactBackground {
     padding: 0;

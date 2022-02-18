@@ -12,6 +12,11 @@ body {
   /*! background: red; */
 }
 
+/* navbar */
+nav a:hover {
+  text-decoration: underline;
+}
+
 /* header section */
 p {
   margin: 0;
@@ -333,6 +338,68 @@ header {
   width: 300px;
 }
 
+#contactBackground {
+  position: relative;
+  width: 100%;
+  padding: 0 80px;
+}
+#contactBackground #contactForm {
+  position: relative;
+  height: 50%;
+  width: 100%;
+  padding: 50px;
+  background-color: #f5deb3;
+}
+#contactBackground #contactForm .conForm {
+  width: 40%;
+}
+#contactBackground #contactForm #conForm button {
+  width: 50%;
+  margin: auto;
+}
+#contactBackground #contactMessage {
+  position: relative;
+  height: 50%;
+  width: 100%;
+  padding: 50px;
+  background-color: #afeeee;
+}
+#contactBackground #contactMessage .conMessage {
+  width: 50%;
+}
+#contactBackground #contactMessage .conMessage h1 {
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+}
+#contactBackground #contactMessage .conMessage h3 {
+  font-family: "Permanent Marker", cursive;
+}
+#contactBackground #contactMessage .conMessage .socialMedia i {
+  font-size: xx-large;
+}
+#contactBackground #contactInformation {
+  position: absolute;
+  width: 30%;
+  z-index: 1;
+  top: 20%;
+  bottom: 20%;
+  right: 200px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+#contactBackground #contactInformation h2 {
+  line-height: 1.6;
+  font-family: "Roboto Slab", serif;
+}
+#contactBackground #contactInformation p {
+  font-family: "Roboto Slab", serif;
+  font-weight: lighter;
+}
+
 /*! import media queries */
 @media (max-width: 480px) {
   /*! Mobile screen sizes */
@@ -372,6 +439,58 @@ header {
     font-size: x-small;
     width: 70%;
     height: 30px;
+  }
+
+  #row3 {
+    width: 100%;
+  }
+  #row3 .col-lg-3 {
+    padding: 0;
+  }
+
+  /*! Contact us page */
+  #contactBackground {
+    padding: 0;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #contactBackground #contactForm {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+  }
+  #contactBackground #contactForm .conForm {
+    padding: 20px 0;
+    width: 90%;
+    margin: auto;
+  }
+  #contactBackground #contactForm #conForm button {
+    width: 90%;
+    margin: auto;
+    padding: 4px 6px;
+    font-size: 90%;
+    font-weight: bold;
+  }
+  #contactBackground #contactMessage {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px;
+  }
+  #contactBackground #contactMessage .conMessage {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+  }
+  #contactBackground #contactMessage .conMessage .socialMedia i {
+    padding: 10px 0;
+    font-size: x-large;
+  }
+  #contactBackground #contactInformation {
+    position: relative;
+    padding: 20px 0;
+    width: 90%;
+    margin: auto;
+    right: 0;
   }
 }
 @media (max-width: 1360px) {

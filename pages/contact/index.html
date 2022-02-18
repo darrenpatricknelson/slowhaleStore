@@ -21,19 +21,19 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="../images/favicon_io/apple-touch-icon.png"
+      href="../../images/favicon_io/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="../images/favicon_io/favicon-32x32.png"
+      href="../../images/favicon_io/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="../images/favicon_io/favicon-16x16.png"
+      href="../../images/favicon_io/favicon-16x16.png"
     />
     <link rel="manifest" href="/site.webmanifest" />
 
@@ -42,6 +42,21 @@
       src="https://kit.fontawesome.com/66abdbb5c7.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- basic header for the webpage -->
@@ -147,10 +162,91 @@
     </nav>
 
     <!-- Section one: Landing Banner -->
-    <h1 id="sectionHeadings">Page is currently under hehe ...</h1>
+    <div id="contactBackground">
+      <!-- the form -->
+      <div id="contactForm">
+        <div class="conForm">
+          <!-- bootstrap form -->
+          <form id="conForm">
+            <div class="row">
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Name and Surname"
+                  aria-label="Name and Surname"
+                />
+              </div>
+              <div class="col-12"><br /></div>
+              <div class="col-12">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Email"
+                  aria-label="Email"
+                />
+              </div>
+              <div class="col-12"><br /></div>
+              <div class="col-12">
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  placeholder="Enter your message"
+                  rows="3"
+                ></textarea>
+              </div>
+              <div class="col-12"><br /></div>
+              <button type="button" class="btn btn-outline-success">
+                We look forward to hearing from you!
+              </button>
+            </div>
+          </form>
+          <!--  -->
+        </div>
+      </div>
+
+      <!-- more information -->
+      <div id="contactInformation">
+        <h2>Call us</h2>
+        <p>(123) 456-7890</p>
+        <p>(123) 456-7890</p>
+
+        <h2>Location</h2>
+        <p>
+          123 Random Place, Cape Town <br />
+          WC, South Africa
+        </p>
+
+        <h2>Business Hours</h2>
+        <p>Mon - Fri ...... 10 am - 8 pm</p>
+        <p>Sat, Sun ...... Closed</p>
+      </div>
+
+      <!-- the message -->
+      <div id="contactMessage">
+        <div class="conMessage">
+          <h1>GET IN TOUCH</h1>
+          <h3>
+            Hey! If you have any personalized items you'd like us to make, have
+            a review of our products or would just like to get in touch, feel
+            free to do so!
+          </h3>
+
+          <!-- icon links -->
+
+          <div class="socialMedia">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-pinterest-p"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- footer section -->
-    <footer id="footer" class="bg-dark">
+    <!-- <footer id="footer" class="bg-dark">
       Follow our socials
       <div class="socialMedia">
         <i class="fa-brands fa-facebook-f"></i>
@@ -160,7 +256,7 @@
         <i class="fa-brands fa-youtube"></i>
       </div>
       © 2022 Slowhale Store, Inc. All Rights Reserved.
-    </footer>
+    </footer> -->
 
     <!-- boostrap js -->
     <script

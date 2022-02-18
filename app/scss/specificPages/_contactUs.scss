@@ -11,7 +11,7 @@
     width: 100%;
     padding: 50px;
 
-    background-color: $wheat;
+    background: linear-gradient(to left, $paleturquoise, $wheat);
 
     .conForm {
       width: 40%;
@@ -31,7 +31,7 @@
     width: 100%;
     padding: 50px;
 
-    background-color: $paleturquoise;
+    background: linear-gradient(to right, $paleturquoise, $wheat);
 
     .conMessage {
       width: 50%;
@@ -78,6 +78,7 @@
       font-weight: lighter;
     }
 
-    background-color: $white;
+    background: linear-gradient(to top, $paleturquoise, $wheat);
+    border-radius: 2rem;
   }
 }

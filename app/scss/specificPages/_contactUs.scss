@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
 
-  padding: 0 80px;
+  padding: 40px 80px;
   // background-color: red;
 
   #contactForm {
@@ -12,6 +12,8 @@
     padding: 50px;
 
     background: linear-gradient(to left, $paleturquoise, $wheat);
+
+    border-radius: 2rem 2rem 0 0;
 
     .conForm {
       width: 40%;
@@ -32,6 +34,8 @@
     padding: 50px;
 
     background: linear-gradient(to right, $paleturquoise, $wheat);
+
+    border-radius: 0 0 2rem 2rem;
 
     .conMessage {
       width: 50%;

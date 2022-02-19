@@ -87,8 +87,8 @@
       bottom: 0;
       left: 15px;
 
-      width: 200px;
-      height: 200px;
+      width: 35%;
+      height: 25%;
 
       img {
         border-radius: 25%;
@@ -112,15 +112,16 @@
         display: flex;
         align-items: flex-end;
         justify-content: end;
-      }
 
-      .auDescriptionInfo {
-        padding: 5px 10px;
+        h1 {
+          font-size: 1.5rem;
+        }
       }
 
       .auDescriptionName,
       .auDescriptionInfo {
         height: 150px;
+        padding: 5px 10px;
         text-align: end;
       }
     }
@@ -132,8 +133,8 @@
       bottom: 0;
       right: 15px;
 
-      width: 200px;
-      height: 200px;
+      width: 35%;
+      height: 25%;
 
       img {
         border-radius: 25%;
@@ -155,17 +156,18 @@
 
       .auDescriptionName {
         display: flex;
-        align-items: flex-end;
+        align-items: flex-start;
         justify-content: start;
-      }
+        height: 50px;
 
-      .auDescriptionInfo {
-        padding: 5px 10px;
+        h1 {
+          font-size: 1.5rem;
+        }
       }
 
       .auDescriptionName,
       .auDescriptionInfo {
-        height: 150px;
+        padding: 5px 10px;
         text-align: start;
       }
     }

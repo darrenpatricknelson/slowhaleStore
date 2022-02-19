@@ -347,42 +347,39 @@ header {
   /*! positioning */
   position: relative;
   width: 100%;
-  height: 600px;
-  padding: 50px;
+  padding: 100px;
   /*! decoration */
 }
-#aboutUs .backgroundDec {
+#aboutUs .auContainter {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+#aboutUs .auContainter .backgroundDec {
   /*! positioning */
   position: absolute;
-  left: 200px;
-  right: 200px;
-  bottom: 50px;
-  height: 250px;
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  z-index: -1;
   /*! decoration */
   border-radius: 1rem;
   background: linear-gradient(to right, #00bfff, #ff69b4);
 }
-#aboutUs .Image {
+#aboutUs .auContainter .Image {
   /*! positioning */
-  position: absolute;
   z-index: 1;
-  bottom: 100px;
-  left: 250px;
-  height: 450px;
+  margin: 30px;
 }
-#aboutUs .Image img {
+#aboutUs .auContainter .Image img {
   width: 100%;
   height: 100%;
   /*! decoration */
   border-radius: 1rem;
 }
-#aboutUs .auDescription {
+#aboutUs .auContainter .auDescription {
   /*! positioning */
-  position: absolute;
-  bottom: 50px;
-  right: 200px;
-  height: 500px;
-  width: 1000px;
+  margin: 30px 0 0 10px;
   /*! decoration */
   border-radius: 1rem 1rem 1rem 0;
   padding: 50px;
@@ -391,75 +388,86 @@ header {
   background-color: rgba(128, 0, 255, 0.4);
   /*! color: dark purple */
 }
-#aboutUs .auDescription .auDescriptionName {
+#aboutUs .auContainter .auDescription .auDescriptionName {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  height: 50%;
 }
-#aboutUs .auDescription .auDescriptionName,
-#aboutUs .auDescription .auDescriptionInfo {
-  height: 200px;
+#aboutUs .auContainter .auDescription .auDescriptionInfo {
+  height: 50%;
 }
-#aboutUs .auDescription h1 {
+#aboutUs .auContainter .auDescription h1 {
   line-height: 1.6;
   text-decoration: underline;
 }
-#aboutUs .auDescription h3 {
+#aboutUs .auContainter .auDescription h3 {
   line-height: 1.8;
 }
-#aboutUs .zoeImage {
+#aboutUs .auContainterZoe {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+}
+#aboutUs .auContainterZoe .backgroundDec {
   /*! positioning */
   position: absolute;
-  z-index: 1;
-  bottom: 100px;
-  right: 250px;
-  height: 450px;
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  z-index: -1;
+  /*! decoration */
+  border-radius: 1rem;
+  background: linear-gradient(to right, #00bfff, #ff69b4);
 }
-#aboutUs .zoeImage img {
+#aboutUs .auContainterZoe .zoeImage {
+  /*! positioning */
+  z-index: 1;
+  margin: 30px;
+}
+#aboutUs .auContainterZoe .zoeImage img {
   width: 100%;
   height: 100%;
   /*! decoration */
   border-radius: 1rem;
 }
-#aboutUs .auDescriptionZoe {
+#aboutUs .auContainterZoe .auDescriptionZoe {
   /*! positioning */
-  position: absolute;
-  bottom: 50px;
-  left: 200px;
-  height: 500px;
-  width: 1000px;
+  margin: 30px 10px 0 0;
   /*! decoration */
   border-radius: 1rem 1rem 0 1rem;
   padding: 50px;
-  /*! display */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: right;
+  /*! text */
+  color: #ffffff;
   /*! text */
   color: #ffffff;
   background-color: rgba(128, 0, 255, 0.4);
 }
-#aboutUs .auDescriptionZoe .auDescriptionName {
+#aboutUs .auContainterZoe .auDescriptionZoe .auDescriptionName {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: end;
+  height: 50%;
 }
-#aboutUs .auDescriptionZoe .auDescriptionName,
-#aboutUs .auDescriptionZoe .auDescriptionInfo {
-  height: 200px;
+#aboutUs .auContainterZoe .auDescriptionZoe .auDescriptionInfo {
+  height: 50%;
+  text-align: right;
 }
-#aboutUs .auDescriptionZoe h1 {
+#aboutUs .auContainterZoe .auDescriptionZoe h1 {
   line-height: 2;
   text-decoration: underline;
 }
-#aboutUs .auDescriptionZoe h3 {
+#aboutUs .auContainterZoe .auDescriptionZoe h3 {
   line-height: 1.8;
+}
+
+.hide {
+  display: none;
 }
 
 #contactBackground {
   position: relative;
   width: 100%;
-  padding: 0 80px;
+  padding: 40px 80px;
 }
 #contactBackground #contactForm {
   position: relative;
@@ -467,6 +475,7 @@ header {
   width: 100%;
   padding: 50px;
   background: linear-gradient(to left, #afeeee, #f5deb3);
+  border-radius: 2rem 2rem 0 0;
 }
 #contactBackground #contactForm .conForm {
   width: 40%;
@@ -481,6 +490,7 @@ header {
   width: 100%;
   padding: 50px;
   background: linear-gradient(to right, #afeeee, #f5deb3);
+  border-radius: 0 0 2rem 2rem;
 }
 #contactBackground #contactMessage .conMessage {
   width: 50%;
@@ -588,8 +598,8 @@ header {
     top: 40px;
     bottom: 0;
     left: 15px;
-    width: 200px;
-    height: 200px;
+    width: 35%;
+    height: 25%;
   }
   #aboutUs .Image img {
     border-radius: 25%;
@@ -610,12 +620,13 @@ header {
     align-items: flex-end;
     justify-content: end;
   }
-  #aboutUs .auDescription .auDescriptionInfo {
-    padding: 5px 10px;
+  #aboutUs .auDescription .auDescriptionName h1 {
+    font-size: 1.5rem;
   }
   #aboutUs .auDescription .auDescriptionName,
 #aboutUs .auDescription .auDescriptionInfo {
     height: 150px;
+    padding: 5px 10px;
     text-align: end;
   }
   #aboutUs .zoeImage {
@@ -624,8 +635,8 @@ header {
     top: 40px;
     bottom: 0;
     right: 15px;
-    width: 200px;
-    height: 200px;
+    width: 35%;
+    height: 25%;
   }
   #aboutUs .zoeImage img {
     border-radius: 25%;
@@ -643,15 +654,16 @@ header {
   }
   #aboutUs .auDescriptionZoe .auDescriptionName {
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     justify-content: start;
+    height: 50px;
   }
-  #aboutUs .auDescriptionZoe .auDescriptionInfo {
-    padding: 5px 10px;
+  #aboutUs .auDescriptionZoe .auDescriptionName h1 {
+    font-size: 1.5rem;
   }
   #aboutUs .auDescriptionZoe .auDescriptionName,
 #aboutUs .auDescriptionZoe .auDescriptionInfo {
-    height: 150px;
+    padding: 5px 10px;
     text-align: start;
   }
 

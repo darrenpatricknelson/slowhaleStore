@@ -686,7 +686,7 @@ header {
 }
 
 /*! import media queries */
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   /*! Mobile screen sizes */
   /*! landing page */
   #row1 .landingBanner {

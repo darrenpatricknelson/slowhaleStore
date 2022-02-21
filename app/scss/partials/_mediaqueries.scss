@@ -1,3 +1,6 @@
+/*! Media Qyeries styles */
+/*! Used for responsive layout */
+
 @media (max-width: 500px) {
   /*! Mobile screen sizes */
   /*! landing page */
@@ -283,13 +286,5 @@
     }
   }
 }
-
-@media (max-width: 1360px) {
-  /*! tablet screen sizes */
-  /*! landing page */
-}
-
-@media (min-width: 1360px) {
-  /*! tablet screen sizes */
-  /*! landing page */
-}
+/*! End of media queries */
+/*!  */

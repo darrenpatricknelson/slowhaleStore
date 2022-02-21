@@ -1,17 +1,16 @@
-/*! Imports */
+// Imports
 
-/*! base scss */
+// base scss
 @import "abstracts/decoration";
 @import "partials/base";
 
-/*! extended */
+// extended
 @import "specificPages/landing";
-@import "specificPages/home";
 @import "specificPages/catalogue";
 @import "specificPages/aboutus";
 @import "specificPages/sizeChart";
 @import "specificPages/shipping";
 @import "specificPages/contactUs";
 
-/*! import media queries */
+// media queries
 @import "partials/mediaqueries";

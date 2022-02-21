@@ -1,9 +1,13 @@
+/*! Shipping page styles */
+/*! Background color */
+
 #shipping {
   background: linear-gradient(to left, $lavender, $lavenderblush);
   nav {
     background: linear-gradient(to left, $lavender, $lavenderblush);
   }
 }
+/*! More styles */
 
 #shippingContainer {
   width: 100%;
@@ -22,3 +26,6 @@
 .hover:hover {
   cursor: pointer;
 }
+
+/*! End of Shipping page styles */
+/*!  */

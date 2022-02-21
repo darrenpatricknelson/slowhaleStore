@@ -1,3 +1,6 @@
+/*! Size Chart Page */
+/*! Background color */
+
 #sizeChart {
   background: $ivory;
 
@@ -5,6 +8,9 @@
     background: linear-gradient(to left, $ivory, $ivory);
   }
 }
+
+/*! More styles */
+
 #section1,
 #section2 {
   padding: 30px 20px;
@@ -48,6 +54,7 @@
 
 #section2 {
   .headers {
+    /*! Heading styles */
     h1,
     h2,
     h3 {
@@ -56,6 +63,8 @@
       -webkit-text-fill-color: transparent;
     }
   }
+
+  /*! Table styles */
   .table {
     width: 80%;
     margin: auto;
@@ -68,6 +77,11 @@
   font-weight: bolder;
 }
 
+/*! Responsiveness */
+
 #halfWidth {
   display: none;
 }
+
+/*! End of Size chart styles */
+/*!  */

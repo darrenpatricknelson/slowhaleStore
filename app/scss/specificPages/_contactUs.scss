@@ -1,16 +1,21 @@
+/*! Contact page styles */
+/*! Background color */
+
 #contactUs {
-  // background: $beige;
   nav {
     background: linear-gradient(to right, $paleturquoise, $wheat);
   }
 }
+
+/*! more styles */
 
 #contactBackground {
   position: relative;
   width: 100%;
 
   padding: 40px 80px;
-  // background-color: red;
+
+  /*! Contact form */
 
   #contactForm {
     position: relative;
@@ -33,6 +38,8 @@
       }
     }
   }
+
+  /*! The message */
 
   #contactMessage {
     position: relative;
@@ -62,17 +69,19 @@
     }
   }
 
+  /*! More information */
+
   #contactInformation {
+    /*! Positioning */
     position: absolute;
     width: 30%;
     z-index: 1;
-    // height: 75%;
 
     top: 20%;
     bottom: 20%;
     right: 200px;
 
-    // text
+    /*! Text */
     text-align: center;
     display: flex;
     justify-content: center;
@@ -93,3 +102,6 @@
     border-radius: 2rem;
   }
 }
+
+/*! End of contact page Styles */
+/*!  */

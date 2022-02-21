@@ -8,7 +8,7 @@
 
 body {
   position: relative;
-  /*! background: red; */
+  background: #f8f9fa;
 }
 
 /* all images */
@@ -23,18 +23,42 @@ nav {
     text-decoration: underline;
   }
 }
-/* header section */
+
+#slowhaleIcon {
+  width: 4rem;
+  height: 4rem;
+  margin: 0.5rem;
+  border-radius: 20%;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.btn-outline-info:hover {
+  background-color: $aqua;
+}
+
+/*! Universal styles */
 
 p {
   margin: 0;
 }
 
-.hide {
-  display: none;
-}
-
 section {
   position: relative;
+}
+
+header {
+  border-bottom: 1px solid black;
+  padding: 0.5%;
+  text-align: center;
+  background-color: $aqua;
+  color: $black;
+}
+
+.hide {
+  display: none;
 }
 
 .row {
@@ -54,8 +78,8 @@ section {
   text-align: center;
 }
 
+/*! social media links */
 .socialMedia {
-  /*! width: 20%; */
   display: flex;
   justify-content: center;
 
@@ -86,35 +110,4 @@ section {
 
 .fa-youtube:hover {
   color: #ff0100;
-}
-
-#slowhaleIcon {
-  width: 4rem;
-  height: 4rem;
-  margin: 0.5rem;
-  border-radius: 20%;
-}
-
-body {
-  background: #f8f9fa;
-}
-
-header {
-  border-bottom: 1px solid black;
-  padding: 0.5%;
-  text-align: center;
-  background-color: $aqua;
-  color: $black;
-}
-
-.looker {
-  border: 2px solid red;
-}
-
-.active {
-  text-decoration: underline;
-}
-
-.btn-outline-info:hover {
-  background-color: $aqua;
 }

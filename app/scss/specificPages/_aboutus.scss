@@ -1,3 +1,6 @@
+/*! About us Page */
+/*! Background color */
+
 #about {
   background: $seashell;
 
@@ -6,12 +9,15 @@
   }
 }
 
+/*! more styles */
+
 #aboutUs {
   /*! positioning */
   position: relative;
   width: 100%;
   padding: 100px;
 
+  /*! First and third sections (duplicates) */
   .auContainter {
     position: relative;
     display: flex;
@@ -76,10 +82,12 @@
         line-height: 1.8;
       }
 
+      /*! Background color: custom color */
       background-color: hsla(270, 100%, 50%, 0.4); /*! color: dark purple */
     }
   }
 
+  /*! Middlesection: Zoe */
   .auContainterZoe {
     position: relative;
     display: flex;
@@ -128,9 +136,6 @@
       /*! text */
       color: $white;
 
-      /*! text */
-      color: $white;
-
       .auDescriptionName {
         display: flex;
         align-items: center;
@@ -156,6 +161,7 @@
   }
 }
 
+/*! Responsive */
 .hide {
   display: none;
 }
@@ -163,3 +169,6 @@
 #smallScreen {
   display: none;
 }
+
+/*! End of About us */
+/*!  */

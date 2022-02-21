@@ -1,5 +1,3 @@
-/*! Imports */
-/*! base scss */
 /*! root scss */
 * {
   margin: 0;
@@ -9,7 +7,7 @@
 
 body {
   position: relative;
-  /*! background: red; */
+  background: #f8f9fa;
 }
 
 /* all images */
@@ -22,17 +20,40 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* header section */
+#slowhaleIcon {
+  width: 4rem;
+  height: 4rem;
+  margin: 0.5rem;
+  border-radius: 20%;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.btn-outline-info:hover {
+  background-color: #00ffff;
+}
+
+/*! Universal styles */
 p {
   margin: 0;
 }
 
-.hide {
-  display: none;
-}
-
 section {
   position: relative;
+}
+
+header {
+  border-bottom: 1px solid black;
+  padding: 0.5%;
+  text-align: center;
+  background-color: #00ffff;
+  color: #000000;
+}
+
+.hide {
+  display: none;
 }
 
 .row {
@@ -52,8 +73,8 @@ section {
   text-align: center;
 }
 
+/*! social media links */
 .socialMedia {
-  /*! width: 20%; */
   display: flex;
   justify-content: center;
 }
@@ -85,38 +106,8 @@ section {
   color: #ff0100;
 }
 
-#slowhaleIcon {
-  width: 4rem;
-  height: 4rem;
-  margin: 0.5rem;
-  border-radius: 20%;
-}
-
-body {
-  background: #f8f9fa;
-}
-
-header {
-  border-bottom: 1px solid black;
-  padding: 0.5%;
-  text-align: center;
-  background-color: #00ffff;
-  color: #000000;
-}
-
-.looker {
-  border: 2px solid red;
-}
-
-.active {
-  text-decoration: underline;
-}
-
-.btn-outline-info:hover {
-  background-color: #00ffff;
-}
-
-/*! extended */
+/*! Landing Page */
+/*! Background */
 #landingPage {
   background: linear-gradient(to left, #f5f5f5, #f5f5f5);
 }
@@ -173,25 +164,6 @@ header {
 
 .bannerImages img {
   height: 100%;
-}
-
-/*! Landing banner */
-/*! Images */
-#firstLanding,
-#secondLanding,
-#thirdLanding {
-  position: absolute;
-  height: 100%;
-}
-
-#secondLanding {
-  z-index: -1;
-  left: 30%;
-}
-
-#thirdLanding {
-  z-index: -2;
-  right: 0;
 }
 
 /*! links */
@@ -296,63 +268,10 @@ header {
   background: #10101e;
 }
 
-/* catalogue */
-.flexContainer {
-  display: flex;
-  justify-content: center;
-  /* cosmetic */
-  height: 100%;
-  width: 100%;
-  /* border: 2px solid black; */
-  cursor: pointer;
-}
-
-.flexContainer img {
-  height: 100%;
-}
-
-.flexContainer:hover .info,
-.flexContainer:hover .image {
-  width: 50%;
-}
-
-.flexContainer:hover .para {
-  transition: visibility 1s ease-in 0.5s;
-  visibility: visible;
-}
-
-.info,
-.image {
-  transition: all 0.15s ease-in-out 0.2s;
-  /* cosmetic */
-  /* color: #fff; */
-}
-
-.image {
-  width: 75%;
-  /* cosmetic */
-  /* background: red; */
-}
-
-.info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 0%;
-  /* cosmetic */
-  /* background: blue; */
-}
-
-.para {
-  text-align: center;
-  visibility: hidden;
-  transition: visibility 0.5s ease-out;
-}
-
-.appear:hover .damn {
-  width: 300px;
-}
-
+/*! End of Landing Page */
+/*!  */
+/*! catalogue page */
+/*! Background color */
 #catalogue {
   background: linear-gradient(to top, #afeeee, #fff5ee);
 }
@@ -360,6 +279,7 @@ header {
   background: linear-gradient(to left, #fff5ee, #fff5ee);
 }
 
+/*! cards */
 .card-text {
   margin: 5px 0;
 }
@@ -376,10 +296,15 @@ header {
   background-color: #0000000a;
 }
 
+/*! cart icon on the navbar */
 .cart {
   margin: 0 20px;
 }
 
+/*! End of catalogue Page */
+/*!  */
+/*! About us Page */
+/*! Background color */
 #about {
   background: #fff5ee;
 }
@@ -387,11 +312,14 @@ header {
   background: linear-gradient(to left, #fff5ee, #fff5ee);
 }
 
+/*! more styles */
 #aboutUs {
   /*! positioning */
   position: relative;
   width: 100%;
   padding: 100px;
+  /*! First and third sections (duplicates) */
+  /*! Middlesection: Zoe */
 }
 #aboutUs .auContainter {
   position: relative;
@@ -431,6 +359,7 @@ header {
   padding: 50px;
   /*! text */
   color: #ffffff;
+  /*! Background color: custom color */
   background-color: rgba(128, 0, 255, 0.4);
   /*! color: dark purple */
 }
@@ -487,8 +416,6 @@ header {
   padding: 50px;
   /*! text */
   color: #ffffff;
-  /*! text */
-  color: #ffffff;
   background-color: rgba(128, 0, 255, 0.4);
 }
 #aboutUs .auContainterZoe .auDescriptionZoe .auDescriptionName {
@@ -509,6 +436,7 @@ header {
   line-height: 1.8;
 }
 
+/*! Responsive */
 .hide {
   display: none;
 }
@@ -517,6 +445,10 @@ header {
   display: none;
 }
 
+/*! End of About us */
+/*!  */
+/*! Size Chart Page */
+/*! Background color */
 #sizeChart {
   background: #fffff0;
 }
@@ -524,6 +456,7 @@ header {
   background: linear-gradient(to left, #fffff0, #fffff0);
 }
 
+/*! More styles */
 #section1,
 #section2 {
   padding: 30px 20px;
@@ -570,6 +503,12 @@ header {
   background: linear-gradient(to right, #ffa500, #ff4500);
 }
 
+#section2 {
+  /*! Table styles */
+}
+#section2 .headers {
+  /*! Heading styles */
+}
 #section2 .headers h1,
 #section2 .headers h2,
 #section2 .headers h3 {
@@ -588,10 +527,15 @@ header {
   font-weight: bolder;
 }
 
+/*! Responsiveness */
 #halfWidth {
   display: none;
 }
 
+/*! End of Size chart styles */
+/*!  */
+/*! Shipping page styles */
+/*! Background color */
 #shipping {
   background: linear-gradient(to left, #e6e6fa, #fff0f5);
 }
@@ -599,6 +543,7 @@ header {
   background: linear-gradient(to left, #e6e6fa, #fff0f5);
 }
 
+/*! More styles */
 #shippingContainer {
   width: 100%;
   padding: 10px 100px 50px;
@@ -616,14 +561,22 @@ header {
   cursor: pointer;
 }
 
+/*! End of Shipping page styles */
+/*!  */
+/*! Contact page styles */
+/*! Background color */
 #contactUs nav {
   background: linear-gradient(to right, #afeeee, #f5deb3);
 }
 
+/*! more styles */
 #contactBackground {
   position: relative;
   width: 100%;
   padding: 40px 80px;
+  /*! Contact form */
+  /*! The message */
+  /*! More information */
 }
 #contactBackground #contactForm {
   position: relative;
@@ -662,12 +615,14 @@ header {
   font-size: xx-large;
 }
 #contactBackground #contactInformation {
+  /*! Positioning */
   position: absolute;
   width: 30%;
   z-index: 1;
   top: 20%;
   bottom: 20%;
   right: 200px;
+  /*! Text */
   text-align: center;
   display: flex;
   justify-content: center;
@@ -685,7 +640,10 @@ header {
   font-weight: lighter;
 }
 
-/*! import media queries */
+/*! End of contact page Styles */
+/*!  */
+/*! Media Qyeries styles */
+/*! Used for responsive layout */
 @media (max-width: 500px) {
   /*! Mobile screen sizes */
   /*! landing page */
@@ -923,13 +881,7 @@ header {
     background: linear-gradient(to right, #afeeee, #f5deb3);
   }
 }
-@media (max-width: 1360px) {
-  /*! tablet screen sizes */
-  /*! landing page */
-}
-@media (min-width: 1360px) {
-  /*! tablet screen sizes */
-  /*! landing page */
-}
+/*! End of media queries */
+/*!  */
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,3 +1,5 @@
+/*! Landing Page */
+/*! Background */
 #landingPage {
   background: linear-gradient(to left, $whitesmoke, $whitesmoke);
   nav {
@@ -39,7 +41,6 @@
   width: 60%;
   margin: 0 auto 3%;
   padding: 5%;
-  //   background: #fff;
 
   div {
     text-align: center;
@@ -57,26 +58,6 @@
 
 .bannerImages img {
   height: 100%;
-}
-
-/*! Landing banner */
-/*! Images */
-
-#firstLanding,
-#secondLanding,
-#thirdLanding {
-  position: absolute;
-  height: 100%;
-}
-
-#secondLanding {
-  z-index: -1;
-  left: 30%;
-}
-
-#thirdLanding {
-  z-index: -2;
-  right: 0;
 }
 
 /*! links */
@@ -195,3 +176,6 @@
 .button:hover {
   background: #10101e;
 }
+
+/*! End of Landing Page */
+/*!  */

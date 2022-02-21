@@ -1,66 +1,5 @@
-/* catalogue */
-
-.flexContainer {
-  display: flex;
-  justify-content: center;
-
-  /* cosmetic */
-  height: 100%;
-  width: 100%;
-  /* border: 2px solid black; */
-  cursor: pointer;
-}
-
-.flexContainer img {
-  height: 100%;
-}
-
-.flexContainer:hover .info,
-.flexContainer:hover .image {
-  width: 50%;
-}
-
-.flexContainer:hover .para {
-  transition: visibility 1s ease-in 0.5s;
-  visibility: visible;
-}
-
-.info,
-.image {
-  transition: all 0.15s ease-in-out 0.2s;
-
-  /* cosmetic */
-  /* color: #fff; */
-}
-
-.image {
-  width: 75%;
-
-  /* cosmetic */
-  /* background: red; */
-}
-
-.info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 0%;
-
-  /* cosmetic */
-  /* background: blue; */
-}
-
-.para {
-  text-align: center;
-  visibility: hidden;
-  transition: visibility 0.5s ease-out;
-}
-
-.appear:hover .damn {
-  width: 300px;
-}
-
-//  //  //
+/*! catalogue page */
+/*! Background color */
 
 #catalogue {
   background: linear-gradient(to top, $paleturquoise, $seashell);
@@ -69,6 +8,8 @@
     background: linear-gradient(to left, $seashell, $seashell);
   }
 }
+
+/*! cards */
 
 .card-text {
   margin: 5px 0;
@@ -89,6 +30,10 @@
   }
 }
 
+/*! cart icon on the navbar */
 .cart {
   margin: 0 20px;
 }
+
+/*! End of catalogue Page */
+/*!  */

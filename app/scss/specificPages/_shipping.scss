@@ -1,0 +1,17 @@
+#shippingContainer {
+  width: 100%;
+  padding: 10px 100px 50px;
+
+  .shippingContainer {
+    width: 60%;
+    margin: auto;
+  }
+}
+
+.dark {
+  font-weight: bold;
+}
+
+.hover:hover {
+  cursor: pointer;
+}

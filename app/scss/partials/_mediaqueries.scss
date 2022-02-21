@@ -173,6 +173,17 @@
     }
   }
 
+  /*! Shipping page */
+  #shippingContainer {
+    width: 100%;
+    padding: 30px 10px;
+
+    .shippingContainer {
+      width: 80%;
+      margin: auto;
+    }
+  }
+
   /*! Contact us page */
   #contactBackground {
     padding: 0;

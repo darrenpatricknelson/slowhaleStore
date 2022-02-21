@@ -21,19 +21,19 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="../images/favicon_io/apple-touch-icon.png"
+      href="../../images/favicon_io/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="../images/favicon_io/favicon-32x32.png"
+      href="../../images/favicon_io/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="../images/favicon_io/favicon-16x16.png"
+      href=".././/images/favicon_io/favicon-16x16.png"
     />
     <link rel="manifest" href="/site.webmanifest" />
 
@@ -146,8 +146,130 @@
       </div>
     </nav>
 
-    <!-- Section one: Landing Banner -->
-    <h1 id="sectionHeadings">Page is currently under construction ...</h1>
+    <!-- Shipping form -->
+    <div id="shippingContainer">
+      <div class="shippingContainer">
+        <div class="shippingForm">
+          <h1>RandomShipping Company</h1>
+          <p>
+            <span class="dark">information</span> >
+            <span class="hover">Shopping</span> >
+            <span class="hover">Payment</span>
+          </p>
+          <form class="row g-3">
+            <br />
+            <h2>Customer information</h2>
+            <br />
+            <div class="col-md-6">
+              <input
+                type="email"
+                class="form-control"
+                id="inputEmail"
+                placeholder="Enter a valid Email"
+              />
+            </div>
+            <div class="col-md-6">
+              <input
+                type="tel"
+                class="form-control"
+                id="inputPhoneNumber"
+                placeholder="Phone number"
+              />
+            </div>
+            <br />
+            <h2>Shipping address</h2>
+            <br />
+            <div class="col-md-6">
+              <input
+                type="text"
+                class="form-control"
+                id="inputName"
+                placeholder="First Name *"
+              />
+            </div>
+            <div class="col-md-6">
+              <input
+                type="text"
+                class="form-control"
+                id="inputSurname"
+                placeholder="Last Name *"
+              />
+            </div>
+            <div class="col-12">
+              <input
+                type="text"
+                class="form-control"
+                id="inputCompany"
+                placeholder="Company (Optional)"
+              />
+            </div>
+            <div class="col-12">
+              <input
+                type="text"
+                class="form-control"
+                id="inputAddress"
+                placeholder="Address *"
+              />
+            </div>
+            <div class="col-md-12">
+              <input
+                type="text"
+                class="form-control"
+                id="inputApartment"
+                placeholder="Apartment, suite, etc (optional)"
+              />
+            </div>
+            <div class="col-md-4">
+              <select id="inputProvince" class="form-select">
+                <option selected>Select a province</option>
+                <option>Eastern Cape</option>
+                <option>Free State</option>
+                <option>Gauteng</option>
+                <option>KwaZulu-Natal</option>
+                <option>Limpopo</option>
+                <option>Mpumalanga</option>
+                <option>Northern Cape</option>
+                <option>North West</option>
+                <option>Western Cape</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <input
+                type="text"
+                class="form-control"
+                id="inputCity"
+                placeholder="City"
+              />
+            </div>
+            <div class="col-md-4">
+              <input
+                type="text"
+                class="form-control"
+                id="inputZip"
+                placeholder="Zip"
+              />
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="gridCheck"
+                />
+                <label class="form-check-label" for="gridCheck">
+                  Check me out
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-outline-success">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
 
     <!-- footer section -->
     <footer id="footer" class="bg-dark">

@@ -529,6 +529,23 @@ header {
   font-weight: lighter;
 }
 
+#shippingContainer {
+  width: 100%;
+  padding: 10px 100px 50px;
+}
+#shippingContainer .shippingContainer {
+  width: 60%;
+  margin: auto;
+}
+
+.dark {
+  font-weight: bold;
+}
+
+.hover:hover {
+  cursor: pointer;
+}
+
 /*! import media queries */
 @media (max-width: 480px) {
   /*! Mobile screen sizes */
@@ -665,6 +682,16 @@ header {
 #aboutUs .auDescriptionZoe .auDescriptionInfo {
     padding: 5px 10px;
     text-align: start;
+  }
+
+  /*! Shipping page */
+  #shippingContainer {
+    width: 100%;
+    padding: 30px 10px;
+  }
+  #shippingContainer .shippingContainer {
+    width: 80%;
+    margin: auto;
   }
 
   /*! Contact us page */

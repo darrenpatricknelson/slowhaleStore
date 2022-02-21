@@ -59,3 +59,32 @@
 .appear:hover .damn {
   width: 300px;
 }
+
+//  //  //
+
+#catalogue {
+  background: linear-gradient(to top, $paleturquoise, $seashell);
+
+  nav {
+    background: linear-gradient(to left, $seashell, $seashell);
+  }
+}
+
+.card-text {
+  margin: 5px 0;
+}
+
+.card-img-top {
+  width: auto;
+  height: 280px;
+}
+
+#catalogueIcons {
+  .card {
+    margin: 30px auto;
+  }
+
+  .card:hover {
+    background-color: #0000000a;
+  }
+}

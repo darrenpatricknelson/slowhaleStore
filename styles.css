@@ -118,13 +118,13 @@ header {
 
 /*! extended */
 #landingPage {
-  background: linear-gradient(to left, #fffff0, #87cefa);
+  background: linear-gradient(to left, #f5f5f5, #f5f5f5);
 }
 #landingPage nav {
-  background: linear-gradient(to left, #fffff0, #87cefa);
+  background: linear-gradient(to left, #f5f5f5, #f5f5f5);
 }
 #landingPage .coFounders {
-  background: linear-gradient(to left, #fffff0, #87cefa);
+  background: linear-gradient(to left, #f5f5f5, #f5f5f5);
 }
 
 #landing {
@@ -353,6 +353,29 @@ header {
   width: 300px;
 }
 
+#catalogue {
+  background: linear-gradient(to top, #afeeee, #fff5ee);
+}
+#catalogue nav {
+  background: linear-gradient(to left, #fff5ee, #fff5ee);
+}
+
+.card-text {
+  margin: 5px 0;
+}
+
+.card-img-top {
+  width: auto;
+  height: 280px;
+}
+
+#catalogueIcons .card {
+  margin: 30px auto;
+}
+#catalogueIcons .card:hover {
+  background-color: #0000000a;
+}
+
 #about {
   background: #fff5ee;
 }
@@ -365,7 +388,6 @@ header {
   position: relative;
   width: 100%;
   padding: 100px;
-  /*! decoration */
 }
 #aboutUs .auContainter {
   position: relative;
@@ -695,6 +717,12 @@ header {
   }
   #row3 .col-lg-3 {
     padding: 0;
+  }
+
+  /*! Catalogue page */
+  #catalogueIcons {
+    width: 90%;
+    margin: auto;
   }
 
   /*! About us page */

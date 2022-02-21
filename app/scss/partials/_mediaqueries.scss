@@ -216,12 +216,12 @@
     padding: 0;
     display: flex;
     flex-direction: column-reverse;
-    // background-color: red;
 
     #contactForm {
       position: relative;
       width: 100%;
       padding: 10px;
+      background: linear-gradient(to right, $paleturquoise, $wheat);
 
       .conForm {
         padding: 20px 0;
@@ -261,11 +261,17 @@
       position: relative;
       padding: 20px 0;
       width: 90%;
-      // z-index: 1;
-      // height: 75%;
       margin: auto;
       right: 0;
       background: $white;
+    }
+  }
+
+  /*! Contact us page color */
+  #contactUs {
+    background: linear-gradient(to right, $paleturquoise, $wheat);
+    nav {
+      background: linear-gradient(to right, $paleturquoise, $wheat);
     }
   }
 }

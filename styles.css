@@ -47,7 +47,7 @@ section {
   width: 100%;
   background: #000;
   color: #fff;
-  margin: 30px auto;
+  margin: 30px auto 0;
   padding: 3%;
   text-align: center;
 }
@@ -117,6 +117,16 @@ header {
 }
 
 /*! extended */
+#landingPage {
+  background: linear-gradient(to left, #fffff0, #87cefa);
+}
+#landingPage nav {
+  background: linear-gradient(to left, #fffff0, #87cefa);
+}
+#landingPage .coFounders {
+  background: linear-gradient(to left, #fffff0, #87cefa);
+}
+
 #landing {
   position: relative;
   display: block;
@@ -343,6 +353,13 @@ header {
   width: 300px;
 }
 
+#about {
+  background: #fff5ee;
+}
+#about nav {
+  background: linear-gradient(to left, #fff5ee, #fff5ee);
+}
+
 #aboutUs {
   /*! positioning */
   position: relative;
@@ -464,8 +481,11 @@ header {
   display: none;
 }
 
-.bodySizes {
+#sizeChart {
   background: #fffff0;
+}
+#sizeChart nav {
+  background: linear-gradient(to left, #fffff0, #fffff0);
 }
 
 #section1,
@@ -536,6 +556,13 @@ header {
   display: none;
 }
 
+#shipping {
+  background: linear-gradient(to left, #e6e6fa, #fff0f5);
+}
+#shipping nav {
+  background: linear-gradient(to left, #e6e6fa, #fff0f5);
+}
+
 #shippingContainer {
   width: 100%;
   padding: 10px 100px 50px;
@@ -551,6 +578,10 @@ header {
 
 .hover:hover {
   cursor: pointer;
+}
+
+#contactUs nav {
+  background: linear-gradient(to right, #afeeee, #f5deb3);
 }
 
 #contactBackground {
@@ -806,6 +837,7 @@ header {
     position: relative;
     width: 100%;
     padding: 10px;
+    background: linear-gradient(to right, #afeeee, #f5deb3);
   }
   #contactBackground #contactForm .conForm {
     padding: 20px 0;
@@ -840,6 +872,14 @@ header {
     margin: auto;
     right: 0;
     background: #ffffff;
+  }
+
+  /*! Contact us page color */
+  #contactUs {
+    background: linear-gradient(to right, #afeeee, #f5deb3);
+  }
+  #contactUs nav {
+    background: linear-gradient(to right, #afeeee, #f5deb3);
   }
 }
 @media (max-width: 1360px) {

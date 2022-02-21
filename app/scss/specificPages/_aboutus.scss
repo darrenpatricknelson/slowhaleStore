@@ -1,3 +1,11 @@
+#about {
+  background: $seashell;
+
+  nav {
+    background: linear-gradient(to left, $seashell, $seashell);
+  }
+}
+
 #aboutUs {
   /*! positioning */
   position: relative;

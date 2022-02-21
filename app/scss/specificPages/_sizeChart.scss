@@ -1,5 +1,9 @@
-.bodySizes {
+#sizeChart {
   background: $ivory;
+
+  nav {
+    background: linear-gradient(to left, $ivory, $ivory);
+  }
 }
 #section1,
 #section2 {

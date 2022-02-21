@@ -47,7 +47,7 @@ section {
   width: 100%;
   background: #000;
   color: #fff;
-  margin: auto;
+  margin: 30px auto;
   padding: 3%;
   text-align: center;
 }
@@ -464,6 +464,95 @@ header {
   display: none;
 }
 
+.bodySizes {
+  background: #fffff0;
+}
+
+#section1,
+#section2 {
+  padding: 30px 20px;
+}
+#section1 .headers,
+#section2 .headers {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+#section1 .headers h1,
+#section2 .headers h1 {
+  font-size: 5rem;
+}
+#section1 .headers h2,
+#section2 .headers h2 {
+  font-size: 3rem;
+}
+#section1 .headers h3,
+#section2 .headers h3 {
+  font-family: "Gideon Roman", cursive;
+  font-weight: bold;
+}
+#section1 .headers h1,
+#section1 .headers h2,
+#section2 .headers h1,
+#section2 .headers h2 {
+  font-family: "Permanent Marker", cursive;
+}
+#section1 .headers h1,
+#section1 .headers h2,
+#section1 .headers h3,
+#section2 .headers h1,
+#section2 .headers h2,
+#section2 .headers h3 {
+  background: linear-gradient(to left, #ffa500, #ff4500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#section1 .table,
+#section2 .table {
+  width: 80%;
+  margin: auto;
+  background: linear-gradient(to right, #ffa500, #ff4500);
+}
+
+#section2 .headers h1,
+#section2 .headers h2,
+#section2 .headers h3 {
+  background: linear-gradient(to right, #adff2f, #008000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#section2 .table {
+  width: 80%;
+  margin: auto;
+  background: linear-gradient(to left, #adff2f, #008000);
+}
+
+.text-align-center {
+  text-align: center;
+  font-weight: bolder;
+}
+
+#halfWidth {
+  display: none;
+}
+
+#shippingContainer {
+  width: 100%;
+  padding: 10px 100px 50px;
+}
+#shippingContainer .shippingContainer {
+  width: 60%;
+  margin: auto;
+}
+
+.dark {
+  font-weight: bold;
+}
+
+.hover:hover {
+  cursor: pointer;
+}
+
 #contactBackground {
   position: relative;
   width: 100%;
@@ -527,23 +616,6 @@ header {
 #contactBackground #contactInformation p {
   font-family: "Roboto Slab", serif;
   font-weight: lighter;
-}
-
-#shippingContainer {
-  width: 100%;
-  padding: 10px 100px 50px;
-}
-#shippingContainer .shippingContainer {
-  width: 60%;
-  margin: auto;
-}
-
-.dark {
-  font-weight: bold;
-}
-
-.hover:hover {
-  cursor: pointer;
 }
 
 /*! import media queries */
@@ -682,6 +754,36 @@ header {
 #aboutUs .auDescriptionZoe .auDescriptionInfo {
     padding: 5px 10px;
     text-align: start;
+  }
+
+  /*! Size chart page */
+  #fullWidth {
+    display: none;
+  }
+
+  #halfWidth {
+    display: contents;
+  }
+
+  #section1,
+#section2 {
+    padding: 20px 10px;
+  }
+  #section1 .headers,
+#section2 .headers {
+    width: 80%;
+  }
+  #section1 .headers h1,
+#section2 .headers h1 {
+    font-size: 3rem;
+  }
+  #section1 .headers h2,
+#section2 .headers h2 {
+    font-size: 2rem;
+  }
+
+  .text-align-center {
+    font-weight: normal;
   }
 
   /*! Shipping page */

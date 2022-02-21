@@ -1,10 +1,5 @@
 /*! Imports */
 
-// tailwind
-// @import base;
-// @import components;
-// @import utilities;
-
 /*! base scss */
 @import "abstracts/decoration";
 @import "partials/base";
@@ -14,8 +9,9 @@
 @import "specificPages/home";
 @import "specificPages/catalogue";
 @import "specificPages/aboutus";
-@import "specificPages/contactUs";
+@import "specificPages/sizeChart";
 @import "specificPages/shipping";
+@import "specificPages/contactUs";
 
 /*! import media queries */
 @import "partials/mediaqueries";

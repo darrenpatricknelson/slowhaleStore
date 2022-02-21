@@ -172,6 +172,33 @@
       }
     }
   }
+  /*! Size chart page */
+  #fullWidth {
+    display: none;
+  }
+
+  #halfWidth {
+    display: contents;
+  }
+
+  #section1,
+  #section2 {
+    padding: 20px 10px;
+    .headers {
+      width: 80%;
+      h1 {
+        font-size: 3rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .text-align-center {
+    font-weight: normal;
+  }
 
   /*! Shipping page */
   #shippingContainer {

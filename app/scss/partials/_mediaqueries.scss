@@ -86,95 +86,97 @@
       display: none;
     }
 
-    .Image {
+    #fullScreen {
       /*! positioning */
-      position: absolute;
-      top: 40px;
-      bottom: 0;
-      left: 15px;
+      display: none;
+    }
 
-      width: 35%;
-      height: 25%;
+    #smallScreen {
+      display: block;
+      float: left;
 
-      img {
-        border-radius: 25%;
+      z-index: 1;
+
+      width: 100px;
+      height: 100px;
+
+      border-radius: 2rem;
+    }
+
+    .auContainter {
+      .auDescription {
+        /*! positioning */
+        position: relative;
+        bottom: 0;
+        right: 0;
+
+        width: 90%;
+        margin: auto;
+        height: 500px;
+
+        /*! decoration */
+        border-radius: 1rem;
+        padding: 5px 10px;
+
+        .auDescriptionName {
+          justify-content: space-evenly;
+          img {
+            padding: 0 5px;
+          }
+          h1 {
+            padding: 0 5px;
+            text-align: center;
+          }
+          h1 {
+            font-size: 1.5rem;
+          }
+        }
+
+        .auDescriptionName,
+        .auDescriptionInfo {
+          height: 150px;
+          padding: 5px 10px;
+          text-align: end;
+        }
       }
     }
 
-    .auDescription {
-      /*! positioning */
-      position: relative;
-      bottom: 0;
-      right: 0;
-
-      width: 90%;
-      margin: auto;
-
+    .auContainterZoe {
       /*! decoration */
       border-radius: 1rem;
       padding: 5px 10px;
 
-      .auDescriptionName {
-        display: flex;
-        align-items: flex-end;
-        justify-content: end;
+      .auDescriptionZoe {
+        /*! positioning */
+        position: relative;
 
-        h1 {
-          font-size: 1.5rem;
-        }
-      }
+        width: 90%;
+        margin: auto;
 
-      .auDescriptionName,
-      .auDescriptionInfo {
-        height: 150px;
+        height: 500px;
+
+        /*! decoration */
+        border-radius: 1rem;
         padding: 5px 10px;
-        text-align: end;
-      }
-    }
 
-    .zoeImage {
-      /*! positioning */
-      position: absolute;
-      top: 40px;
-      bottom: 0;
-      right: 15px;
+        .auDescriptionName {
+          justify-content: space-evenly;
 
-      width: 35%;
-      height: 25%;
+          img {
+            padding: 0 5px;
+          }
 
-      img {
-        border-radius: 25%;
-      }
-    }
-
-    .auDescriptionZoe {
-      /*! positioning */
-      position: relative;
-      bottom: 0;
-      left: 0;
-
-      width: 90%;
-      margin: auto;
-
-      /*! decoration */
-      border-radius: 1rem;
-      padding: 5px 10px;
-
-      .auDescriptionName {
-        display: flex;
-        align-items: flex-start;
-        justify-content: start;
-        height: 50px;
-
-        h1 {
-          font-size: 1.5rem;
+          h1 {
+            font-size: 1.5rem;
+          }
         }
-      }
 
-      .auDescriptionName,
-      .auDescriptionInfo {
-        padding: 5px 10px;
-        text-align: start;
+        .auDescriptionName,
+        .auDescriptionInfo {
+          height: auto;
+          padding: 5px 10px;
+          text-align: start;
+        }
       }
     }
   }

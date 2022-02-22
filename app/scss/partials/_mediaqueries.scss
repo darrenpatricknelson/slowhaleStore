@@ -70,7 +70,7 @@
   }
 
   /*! About us page */
-  #aboutUs {
+  .aboutUs {
     /*! positioning */
     position: relative;
     width: 100%;
@@ -89,12 +89,7 @@
       display: none;
     }
 
-    #fullScreen {
-      /*! positioning */
-      display: none;
-    }
-
-    #smallScreen {
+    .smallScreen {
       display: block;
       float: left;
 
@@ -107,6 +102,10 @@
     }
 
     .auContainter {
+      .fullScreen {
+        /*! positioning */
+        display: none;
+      }
       .auDescription {
         /*! positioning */
         position: relative;
@@ -149,6 +148,11 @@
       border-radius: 1rem;
       padding: 5px 10px;
 
+      .fullScreen {
+        /*! positioning */
+        display: none;
+      }
+
       .auDescriptionZoe {
         /*! positioning */
         position: relative;
@@ -184,11 +188,11 @@
     }
   }
   /*! Size chart page */
-  #fullWidth {
+  .fullWidth {
     display: none;
   }
 
-  #halfWidth {
+  .halfWidth {
     display: contents;
   }
 

@@ -77,32 +77,42 @@ header {
 .socialMedia {
   display: flex;
   justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+.socialMedia a {
+  color: #ffffff;
 }
 .socialMedia i {
   margin: 1% 10px 2%;
 }
 
 .socialMedia i:hover {
+  transform: scale(1.1);
   cursor: pointer;
 }
 
 .fa-facebook-f:hover {
+  transform: scale(1.1);
   color: #129cf7;
 }
 
 .fa-twitter:hover {
+  transform: scale(1.1);
   color: #1d9bf0;
 }
 
 .fa-instagram:hover {
+  transform: scale(1.1);
   color: #f67340;
 }
 
 .fa-pinterest-p:hover {
+  transform: scale(1.1);
   color: #b7091b;
 }
 
 .fa-youtube:hover {
+  transform: scale(1.1);
   color: #ff0100;
 }
 

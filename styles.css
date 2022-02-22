@@ -192,6 +192,7 @@ header {
 .sneakImage .sneakPeakImages {
   width: 100%;
   height: 100%;
+  filter: grayscale(50%) drop-shadow(8px 8px 10px gray);
 }
 
 #sneakSets,
@@ -270,6 +271,62 @@ header {
 
 /*! End of Landing Page */
 /*!  */
+/*! Arrivals Page */
+/*! Background */
+#arrivals p {
+  text-align: center;
+}
+#arrivals .backgroundShift {
+  font-family: "Roboto Mono", monospace;
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  margin: 20px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation-name: example;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+#arrivals .letsTravel {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-family: "Poppins", sans-serif;
+  margin: 0 auto 5px;
+}
+#arrivals .letsTravel a {
+  text-decoration: none;
+  color: #663399;
+}
+#arrivals .letsTravel a:hover {
+  padding: 0 10px;
+  font-size: 1.4rem;
+  color: #8000ff;
+  text-decoration: underline;
+}
+#arrivals .constructionLeft,
+#arrivals .constructionRight {
+  filter: drop-shadow(8px 8px 10px #face094c);
+  margin: 10px;
+  border: 2px dashed #face09;
+  width: 10vw;
+}
+#arrivals .constructionLeft {
+  float: left;
+}
+#arrivals .constructionRight {
+  float: right;
+}
+
+@keyframes example {
+  from {
+    background-color: #ff0000;
+  }
+  to {
+    background-color: #0000ff;
+  }
+}
+.clear {
+  clear: both;
+}
+
 /*! catalogue page */
 /*! Background color */
 #catalogue {
@@ -291,9 +348,12 @@ header {
 
 #catalogueIcons .card {
   margin: 30px auto;
+  transition: all 0.2s ease-in-out;
 }
 #catalogueIcons .card:hover {
+  cursor: pointer;
   background-color: #0000000a;
+  transform: scale(1.1);
 }
 
 /*! cart icon on the navbar */

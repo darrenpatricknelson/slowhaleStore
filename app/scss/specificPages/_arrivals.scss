@@ -1,0 +1,68 @@
+/*! Arrivals Page */
+/*! Background */
+#arrivals {
+  //   background: linear-gradient(to left, $burlywood, $whitesmoke);
+  nav {
+    // background: linear-gradient(to left, $burlywood, $whitesmoke);
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .backgroundShift {
+    font-family: "Roboto Mono", monospace;
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    margin: 20px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation-name: example;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
+
+  .letsTravel {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-family: "Poppins", sans-serif;
+    margin: 0 auto 5px;
+    a {
+      text-decoration: none;
+      color: $rebeccapurple;
+    }
+
+    a:hover {
+      padding: 0 10px;
+      font-size: 1.4rem;
+      color: $darekpurple;
+      text-decoration: underline;
+    }
+  }
+
+  .constructionLeft,
+  .constructionRight {
+    filter: drop-shadow(8px 8px 10px #face094c);
+    margin: 10px;
+    border: 2px dashed #face09;
+    width: 10vw;
+  }
+
+  .constructionLeft {
+    float: left;
+  }
+  .constructionRight {
+    float: right;
+  }
+}
+
+@keyframes example {
+  from {
+    background-color: $red;
+  }
+  to {
+    background-color: $blue;
+  }
+}
+
+.clear {
+  clear: both;
+}
